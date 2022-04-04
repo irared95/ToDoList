@@ -1,0 +1,21 @@
+//utils
+@import './utils/reset';
+@import "./utils/fonts";
+@import "./utils/variable";
+@import "./utils/mixins";
+@import "./utils/my-normalize";
+//components
+@import "./components/dots";
+@import "./components/btns";
+@import "./components/footer";
+@import "./components/header";
+//sections
+@import "./sections/todolist";
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
