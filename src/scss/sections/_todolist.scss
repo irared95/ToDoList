@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: $violet-light;
+    padding: 10px;
 }
 .todolist{
     display: flex;
@@ -13,7 +14,6 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-
 
     &__title,
     &__list{
@@ -30,11 +30,19 @@
         padding: 20px;
         margin-bottom: 20px;
     }
+    &__arrow{
+        position: absolute;
+        top: 16px;
+    }
+    &__arrow.left{
+        left: 25px;
+    }
+    &__arrow.right{
+        right: 25px;
+    }
     &__list{
-        background-color: $white;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
         padding: 26px 10px;
-
+        margin-bottom: 30px;
     }
     &__item{
         padding: 10px 20px;
@@ -67,7 +75,16 @@
         text-align: justify;
         margin: 0 45px 0 10px;
     }
+
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
     &__button{
+        position: absolute;
+        bottom: 10px;
         font-family: $poppins-semiBold, $sans-serif;
         font-size: 18px;
         line-height: 20px;
@@ -76,8 +93,6 @@
         padding: 12px 30px;
         display: inline-block;
         background-color: $violet;
-        position: absolute;
-        bottom: -22px;
         transition: .2s linear;
         &:hover{
             box-shadow: 200px 0 0 0 rgba(0,0,0,.4) inset;
@@ -111,4 +126,36 @@
         background-color: $violet;
     }
 
+    &__nav{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &-btn{
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+            border-radius: 17px;
+            padding: 10px 15px;
+        }
+        &-select{
+            outline: 0;
+        }
+    }
+
+    &__input{
+        &-btn{
+            padding: 10px 25px;
+        }
+    }
+
+    &__form {
+        &-add {
+            display: flex;
+            align-items: center;
+        }
+    }
 }
+
+
+

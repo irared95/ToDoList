@@ -406,12 +406,47 @@ button {
   cursor: pointer;
 }
 
+.paper {
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 14px;
+}
+
+.input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Poppins Regular", sans-serif;
+  color: #af7eeb;
+  border: none;
+}
+.input::placeholder {
+  color: #af7eeb;
+}
+
+.button {
+  font-family: "Poppins SemiBold", sans-serif;
+  display: inline-block;
+  background-color: #af7eeb;
+  transition: 0.2s linear;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 17px;
+  padding: 10px 15px;
+}
+.button:hover {
+  box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #e3e9ff;
+  padding: 10px;
 }
 
 .todolist {
@@ -437,10 +472,19 @@ button {
   padding: 20px;
   margin-bottom: 20px;
 }
+.todolist__arrow {
+  position: absolute;
+  top: 16px;
+}
+.todolist__arrow.left {
+  left: 25px;
+}
+.todolist__arrow.right {
+  right: 25px;
+}
 .todolist__list {
-  background-color: #fff;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
   padding: 26px 10px;
+  margin-bottom: 30px;
 }
 .todolist__item {
   padding: 10px 20px;
@@ -471,7 +515,14 @@ button {
   text-align: justify;
   margin: 0 45px 0 10px;
 }
+.todolist__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .todolist__button {
+  position: absolute;
+  bottom: 10px;
   font-family: "Poppins SemiBold", sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -480,8 +531,6 @@ button {
   padding: 12px 30px;
   display: inline-block;
   background-color: #af7eeb;
-  position: absolute;
-  bottom: -22px;
   transition: 0.2s linear;
 }
 .todolist__button:hover {
@@ -510,6 +559,29 @@ button {
 }
 .todolist__checkbox:checked + .todolist__label .todolist__indicator {
   background-color: #af7eeb;
+}
+.todolist__nav {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.todolist__nav-btn {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 17px;
+  padding: 10px 15px;
+}
+.todolist__nav-select {
+  outline: 0;
+}
+.todolist__input-btn {
+  padding: 10px 25px;
+}
+.todolist__form-add {
+  display: flex;
+  align-items: center;
 }
 
 .container {

@@ -1,0 +1,19 @@
+.button{
+    font-family: $poppins-semiBold, $sans-serif;
+    //font-size: 18px;
+    //line-height: 20px;
+    //color: $white;
+    //border-radius: 20px;
+    //padding: 12px 30px;
+    display: inline-block;
+    background-color: $violet;
+    transition: .2s linear;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 17px;
+    padding: 10px 15px;
+    &:hover{
+        box-shadow: 200px 0 0 0 rgba(0,0,0,.4) inset;
+    }
+}
