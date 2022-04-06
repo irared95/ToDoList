@@ -12,20 +12,23 @@
 <body>
 <main class="main">
     <div class="todolist">
-        <h1 class="todolist__title">Monday 04.04.2022</h1>
-        <button class="todolist__arrow left"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="chevron-left"><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153"/></g></g></svg></button>
-        <button class="todolist__arrow right"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="keyboard-arrow-right"><polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306"/></g></g></svg></button>
-        <div class="todolist__nav paper">
-            <input class="todolist__nav-input input" type="text" name="text" placeholder="What to search today?:)">
-            <select class="todolist__nav-select input" name="select">
-                <option value="value1"selected>Значение 1</option>
+        <div class="header">
+            <h1 class="title">Monday 04.04.2022</h1>
+            <button class="arrow arrow--left"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="chevron-left"><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153"/></g></g></svg></button>
+            <button class="arrow arrow--right"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="keyboard-arrow-right"><polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306"/></g></g></svg></button>
+        </div>
+
+        <form class="navigation paper">
+            <input class="navigation__input input" type="text" name="text" placeholder="What to search today?:)">
+            <select class="navigation__select input" name="select">
+                <option value="value1" selected>Значение 1</option>
                 <option value="value2">Значение 2</option>
                 <option value="value3">Значение 3</option>
             </select>
-            <button class="todolist__nav-btn button">Search</button>
-        </div>
-        <div class="todolist__wrapper">
-            <ul class="todolist__list paper">
+            <button class="navigation__btn button button--small" type="button">Search</button>
+        </form>
+        <div class="todolist__wrapper paper">
+            <ul class="todolist__list">
                 <li class="todolist__item">
                     <input class="todolist__checkbox" type="checkbox" id="todolist1" name="text" value="yes">
                     <label class="todolist__label" for="todolist1">
@@ -51,12 +54,12 @@
                     </label>
                 </li>
             </ul>
-            <button class="todolist__button">+ New task</button>
+            <button class="todolist__button button" type="button">+ New task</button>
         </div>
-        <div class="todolist__form-add paper">
-            <input class="todolist__input input" type="text" name="text" placeholder="What to do today?:)">
-            <button class="todolist__input-btn button">Add</button>
-        </div>
+        <form class="form-add paper">
+            <input class="form-add__input input" type="text" name="text" placeholder="What to do today?:)">
+            <button class="form-add__btn button button--small" type="button">Add</button>
+        </form>
     </div>
 </main>
 

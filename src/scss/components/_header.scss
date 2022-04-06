@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    background-color: $violet;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title {
+    font-family: $poppins-semiBold, $sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--left {
+        left: 10px;
+    }
+
+    &--right {
+        right: 10px;
+    }
+}

@@ -1,11 +1,12 @@
-.input{
+.input {
     width: 100%;
     font-size: 14px;
     line-height: 20px;
     font-family: "Poppins Regular", sans-serif;
     color: $violet;
     border: none;
-    &::placeholder{
+
+    &::placeholder {
         color: $violet;
     }
 }

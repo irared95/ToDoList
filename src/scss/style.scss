@@ -4,20 +4,23 @@
 @import "./utils/variable";
 @import "./utils/mixins";
 @import "./utils/my-normalize";
+
 //components
 @import "./components/paper";
-@import "./components/form";
-@import "./components/dots";
+@import "./components/inputs";
 @import "./components/btns";
-@import "./components/footer";
-@import "./components/header";
-//sections
-@import "./sections/todolist";
 
-.container {
-    max-width: 1180px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    height: 100%;
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: $violet-light;
+    padding: 10px;
 }
+
+//modules
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/form-add";
+@import "./sections/todolist";
