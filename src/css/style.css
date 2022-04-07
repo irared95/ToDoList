@@ -506,6 +506,9 @@ button {
 .form-add__btn {
   padding: 10px 25px;
 }
+.form-add.active {
+  opacity: 0;
+}
 
 .todolist {
   max-width: 500px;
@@ -521,7 +524,13 @@ button {
 .todolist__list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 16px;
+  width: 100%;
+}
+.todolist__item {
+  display: block;
+  width: 100%;
 }
 .todolist__item svg {
   display: none;
@@ -542,7 +551,7 @@ button {
 .todolist__cart {
   position: absolute;
   right: 10px;
-  top: 4px;
+  top: 0;
 }
 .todolist__button {
   position: absolute;

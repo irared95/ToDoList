@@ -5,4 +5,7 @@
     &__btn {
         padding: 10px 25px;
     }
+    &.active{
+        opacity: 0;
+    }
 }
