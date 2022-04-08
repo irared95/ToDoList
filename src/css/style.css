@@ -536,6 +536,7 @@ button {
   display: none;
   width: 20px;
   height: 20px;
+  pointer-events: none;
 }
 .todolist__item:hover svg {
   display: block;
