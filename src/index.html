@@ -14,25 +14,32 @@
     <div class="todolist">
         <div class="header">
             <h1 class="title">Monday 04.04.2022</h1>
-            <button class="arrow arrow--left"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="chevron-left"><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153"/></g></g></svg></button>
-            <button class="arrow arrow--right"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="keyboard-arrow-right"><polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306"/></g></g></svg></button>
+            <button class="arrow arrow--left">
+                <svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="chevron-left"><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153"/></g></g></svg>
+            </button>
+            <button class="arrow arrow--right">
+                <svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="30px" fill="#fff" viewBox="0 0 306 306" xml:space="preserve"><g><g id="keyboard-arrow-right"><polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306"/></g></g></svg>
+            </button>
         </div>
 
         <form class="navigation paper">
-            <input class="navigation__input input" type="text" name="text" placeholder="What to search today?:)">
+            <input class="navigation__input navigation__input--js input" type="text" name="text"
+                   placeholder="What to search today?:)">
             <select class="navigation__select input" name="select">
                 <option value="value1" selected>Значение 1</option>
                 <option value="value2">Значение 2</option>
                 <option value="value3">Значение 3</option>
             </select>
-            <button class="navigation__btn button button--small" type="button">Search</button>
+            <button class="navigation__clear navigation__clear--js" type="reset"></button>
+            <button class="navigation__btn navigation__btn--js button button--small" type="button">Search</button>
         </form>
         <div class="todolist__wrapper paper">
             <ul class="todolist__list"></ul>
             <button class="todolist__button todolist__button--js button" type="button">+ New task</button>
         </div>
         <form class="form-add form-add--js paper">
-            <input class="form-add__input form-add__input--js input" type="text" name="text" placeholder="What to do today?:)" required>
+            <input class="form-add__input form-add__input--js input" type="text" name="text"
+                   placeholder="What to do today?:)" required>
             <button class="form-add__btn form-add__btn--js button button--small" type="submit">Add</button>
         </form>
     </div>

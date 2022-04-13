@@ -15,4 +15,26 @@
     &__select {
         outline: 0;
     }
+
+    &__clear{
+        position: relative;
+        border: none;
+        width: 40px;
+        height: 30px;
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            border-radius: 4px;
+            background-color: $violet;
+            width: 20px;
+        }
+        &:before{
+            transform: rotate(-45deg);
+        }
+        &:after{
+            transform: rotate(45deg);
+        }
+    }
 }

@@ -498,6 +498,26 @@ button {
 .navigation__select {
   outline: 0;
 }
+.navigation__clear {
+  position: relative;
+  border: none;
+  width: 40px;
+  height: 30px;
+}
+.navigation__clear:after, .navigation__clear:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #af7eeb;
+  width: 20px;
+}
+.navigation__clear:before {
+  transform: rotate(-45deg);
+}
+.navigation__clear:after {
+  transform: rotate(45deg);
+}
 
 .form-add {
   display: flex;
@@ -583,4 +603,8 @@ button {
 }
 .todolist__checkbox:checked + .todolist__label .todolist__indicator {
   background-color: #959fbd;
+}
+.todolist__copy {
+  position: absolute;
+  right: 40px;
 }
